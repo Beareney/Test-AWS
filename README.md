@@ -1,1 +1,1 @@
-Este proyecto es una prueba del funcionamiento de una pagina web con AWS.
+Este proyecto es para realizar pruebas de funcionamiento de AWS.
