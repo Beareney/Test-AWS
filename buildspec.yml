@@ -6,7 +6,8 @@ phases:
       python: 3.11
     commands:
       - pip install -r requirements.txt
+      - pip install pylint
   build:
     commands:
-      - pylint app.py  # Ejecutar el análisis estático del código con Pylint
+      - pylint app.py 
       - python -m pytest
