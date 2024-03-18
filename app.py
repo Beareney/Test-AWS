@@ -1,3 +1,6 @@
+"""
+Este módulo contiene el codigo inicial de la aplicacion web.
+"""
 from flask import Flask, render_template
 
 app = Flask(__name__)
