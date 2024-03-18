@@ -7,7 +7,9 @@ phases:
     commands:
       - pip install -r requirements.txt
       - pip install pylint
+      - pip install html5validator
   build:
     commands:
-      - pylint app.py 
+      - pylint --disable=all --enable=F,E,W,R,C app.py 
       - python -m pytest
+      - html5validator --show-warnings --blacklist=warning Templates/en/index.html
