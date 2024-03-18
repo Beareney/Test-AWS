@@ -11,5 +11,5 @@ phases:
   build:
     commands:
       - pylint --disable=all --enable=F,E,W,R,C app.py 
-      - python -m pytest
+      - python -m unittest discover
       - html5validator --show-warnings --blacklist=warning Templates/en/index.html
