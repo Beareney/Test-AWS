@@ -8,7 +8,5 @@ phases:
       - pip install -r requirements.txt
   build:
     commands:
-      - python setup.py build
-  post_build:
-    commands:
-      - python setup.py install
+      - pylint app.py  # Ejecutar el análisis estático del código con Pylint
+      - python -m pytest
