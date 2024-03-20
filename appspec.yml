@@ -15,8 +15,8 @@ permissions:
        - directory
 hooks:
    BeforeInstall:
-    - location: scripts/installdependences.sh
-      runas: root
+    #- location: scripts/installdependences.sh
+    #  runas: root
     - location: scripts/startapache.sh
       runas: root
    AfterInstall:
