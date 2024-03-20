@@ -5,7 +5,7 @@ files:
     destination: /var/www/aws-test.com/html/ 
     overwrite: true  
 permissions:
-   - object: /var/www/html
+   - object: /var/www/aws-test.com/html/
      pattern: "**"
      owner: apache
      group: apache
