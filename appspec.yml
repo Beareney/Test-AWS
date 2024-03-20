@@ -7,18 +7,12 @@ files:
 permissions:
    - object: /var/www/aws-test.com/html/
      pattern: "**"
-     owner: root
-     group: root
+     owner: ubuntu
+     group: ubuntu
      mode: 755
      type:
        - file
-       - directory
-#hooks:
-#   BeforeInstall:
-#    #- location: scripts/installdependences.sh
-#    #  runas: root
-#    - location: scripts/startapache.sh
-#      runas: root
-#   AfterInstall:
-#    - location: scripts/restartapache.sh
-#      runas: root
+hooks:
+   AfterInstall:
+    - location: scripts/restartapache.sh
+      runas: root
