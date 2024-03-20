@@ -13,12 +13,12 @@ permissions:
      type:
        - file
        - directory
-hooks:
-   BeforeInstall:
-    #- location: scripts/installdependences.sh
-    #  runas: root
-    - location: scripts/startapache.sh
-      runas: root
-   AfterInstall:
-    - location: scripts/restartapache.sh
-      runas: root
+#hooks:
+#   BeforeInstall:
+#    #- location: scripts/installdependences.sh
+#    #  runas: root
+#    - location: scripts/startapache.sh
+#      runas: root
+#   AfterInstall:
+#    - location: scripts/restartapache.sh
+#      runas: root
