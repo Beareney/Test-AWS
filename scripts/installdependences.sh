@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Actualiza el índice de paquetes
-sudo apt update
+apt update
 
 # Instala Apache2
-sudo apt install -y apache2
+apt install -y apache2
 
 # Verifica si la instalación fue exitosa
 if [ $? -eq 0 ]; then
