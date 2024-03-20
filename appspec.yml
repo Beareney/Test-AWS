@@ -7,8 +7,8 @@ files:
 permissions:
    - object: /var/www/aws-test.com/html/
      pattern: "**"
-     owner: ubuntu
-     group: ubuntu
+     owner: root
+     group: root
      mode: 755
      type:
        - file
